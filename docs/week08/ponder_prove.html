@@ -1,0 +1,80 @@
+<!-- uses https://highlightjs.org/
+-->
+
+<html>
+
+<head>
+	<link rel="shortcut icon" href="https://byui-cse.github.io/Language-Courses/site/images/fav.ico" type="image/x-icon">
+    <script type="text/javascript">
+                 var codeType = "Clojure"
+    </script>
+    <script src="https://byui-cse.github.io/Language-Courses/site/highlight.pack.js"></script>
+    <link rel="stylesheet" href="https://byui-cse.github.io/Language-Courses/site/highlight_styles/xcode.css">
+    <link rel="stylesheet" href="https://byui-cse.github.io/Language-Courses/site/weekly.css">
+    <script type="text/javascript" src="https://byui-cse.github.io/Language-Courses/site/weekly.js"></script>
+
+</head>
+
+<body onload="fetchSource()">
+<div class="hero-image">
+  <div class="hero-text">
+    <h1>CSE 180: Week 08</h1>
+    <p>Ponder and Prove</p>
+  </div>
+</div>
+<h1>Your Tasks</h1>
+<div>
+<p>
+This week you will begin to explore how to use calculation to assess and
+classify sorting algorithms by their efficiency.
+</p>
+
+<p>
+In class you learned the basics of O-notation (Order of growth). You saw how
+it pertains to the case where the algorithm can&rsquo;t get any worse.
+(Mathematically, the &ldquo;worst possible case&rdquo; is actually easier to analyze than
+a &ldquo;typical case.&rdquo;)
+</p>
+
+<p>
+You also learned about the bubble sort and the merge sort algorithms.
+</p>
+
+<p>
+To compare two sorting algorithms, you need an objective measure of the work
+each does. Say that the unit of work is to compare one item in a collection
+of items to another. Doing this work tells you if one item comes before or
+after another. If so you must swap their order, or do nothing if they compare
+the same.
+</p>
+
+<p>
+Do this experiment. Shuffle a standard deck of cards. Give someone who is
+not in the class the deck and ask them to sort the cards by looking at each
+card one at a time. Count the number of times they compare one card to another.
+</p>
+
+<p>
+See if you can figure out what algorithm they&rsquo;re using, and what the
+O-notation for it would be.
+</p>
+
+<p>
+The idea is to measure the total work they do and relate that to the size of
+their sorting task (the number of cards in this case).
+</p>
+
+</div>
+<div>
+<h3>How to Fulfill Return-and-Report Requirements</h3>
+<div>
+    <ul>
+        <li>Make sure you take notes on the conversations you have outside of class.</li>
+        <li>Prepare to share with your classroom team your discussion notes and
+            discoveries about the algorithms you investigated and assessed.</li>
+    </ul>
+</div>
+</div>
+<a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
+</body>
+</html>
