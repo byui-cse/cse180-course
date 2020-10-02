@@ -30,6 +30,37 @@ This week you are learning about how to find the shortest path to
 what you want to be or where you want to go with your life. Speaking
 algorithmically, we&rsquo;re talking about graphs and paths.
 </p>
+<p>
+    Below is an image of an graph. The image is made up of circles, called nodes, and arrows,  
+    called edges. At each node (circle) is a decision point. Take a look at the node labled 2. 
+    At node 2, a decision has to be made. The choice is to go to node 3 or node 4. Also, since 
+    the edges are arrows, you can't backtrack. You can't go from node 2 directly to node 1.
+</p>
+<p>
+    You will notice, however, that you can get from node 2 to node 1 indirectly by first going to 
+    node 3, then node 0, and finally node 1. In any graph, if you can get from a node back to itself 
+    you have a cycle in your graph. 
+</p>
+<img src="https://media.geeksforgeeks.org/wp-content/uploads/cycle-BFS.png"/>
+
+
+<p>
+    Sometimes the choices we make in our lives are undoable. Take a look at the graph below. It 
+    represents choices made when getting dressed. Notice there are no arrow heads on the edges. 
+    This is called an undirected graph. The graph is saying you can start with any node, let's 
+    say selecting a black t-shirt, then choose the red hat to go with it, change out mind, go back 
+    to the black t-shirt, and then select the white hat or no hat at all.
+
+</p>
+<img src="https://miro.medium.com/max/700/1*9NaTWnSvRXPv4bewvIhMNQ.png"/>
+
+<p>
+    Here is an example where you use graphs everyday. Let's say you are on BYU-Idaho's campus. A 
+    class you are in gets out. You now need to get to your next class. It's in a building 
+    across campus. How do you get from here to there? You have nodes where sidewalks intersect. 
+    The sidewalks themsevles are edges. You make a choice each time you reach a node (crosswalk 
+    intersection).
+</p>
 
 <p>
 The life lesson is:
