@@ -3,6 +3,6 @@ To a meeting set up for this class in Zoom, upload a CSV that describes each gro
 
 Set up the same teams in Canvas (https://lakeland.instructure.com/courses/1455362/pages/how-to-use-course-groups).
 
-To initiate in-group peer reviews, follow the instructions for the Intra-Group Peer Reviews Plugin (https://community.canvaslms.com/t5/Higher-Ed-Users/Assigning-Intra-Group-Peer-Reviews/ba-p/261886).
+To initiate in-group peer reviews, follow the instructions for the Intra-Group Peer Reviews Plugin (https://vimeo.com/74238647).
 
 You will need to add the results of the peer reviews to the grade book after the students complete the peer reviews each week. There is no automated way to do this in canvas. You can do this inside of speedgrader.
