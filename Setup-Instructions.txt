@@ -1,7 +1,7 @@
 Steps for Groups and Peer Reviews
 To a meeting set up for this class in Zoom, upload a CSV that describes each group. This consist of a group name and a BYU-I email address for each student.
 
-Set up the same teams in Canvas.
+Set up the same teams in Canvas (https://lakeland.instructure.com/courses/1455362/pages/how-to-use-course-groups).
 
 To initiate in-group peer reviews, follow the instructions for the Intra-Group Peer Reviews Plugin (https://community.canvaslms.com/t5/Higher-Ed-Users/Assigning-Intra-Group-Peer-Reviews/ba-p/261886).
 
