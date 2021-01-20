@@ -23,8 +23,65 @@
     <p>Placeholder</p>
   </div>
 </div>
-*****
-*****
+<p>
+Each of our lives consists of a series of waypoints and choices. The Lord's plan of happiness such a set of 
+waypoints and choices. The first waypoint is when we hear and understand the Gospel of Jesus Christ. The 
+choice is whether we will embrace it or reject it. If we choose to embrace it, there is another waypoint. 
+We have to choose to repent or not. Then follows baptism or not. Our choices at these waypoints are the 
+way we choose salvation and eternal live, or not. They are part of a huge web of waypoints that 
+make up the lives we lead. Choosing The Lord and His Gospel impacts all choices made there after and 
+therefore impacts everyone we meet there after. 
+</p>
+<p>
+President Nelson taught us in 
+<a href="https://www.churchofjesuschrist.org/study/general-conference/1990/10/choices?lang=eng">a conference talk</a> 
+about making choices, even when the thought of doing so causes uncertainty and anxiety. He was counciling a 
+sister who was scared to make a choice because she new the
+</p>
+<blockquote>
+  consequences of her choice would affect her husband and her family as well. She said, "Decisions are really hard for me. 
+  I even have trouble choosing what to wear each morning." "You are not so different," I replied. "Each of us must make choices."
+  <p>Russell M Nelson - Choices, 1999 </p>
+</blockquote>
+This week you are learning about how to find the shortest path to
+what you want to be or where you want to go with your life. Speaking
+algorithmically, we&rsquo;re talking about graphs and paths.
+</p>
+<p>
+    Below is an image of an graph. The image is made up of circles, called nodes, and arrows,
+    called edges. At each node (circle) is a decision point. Take a look at the node labled 2.
+    At node 2, a decision has to be made. The choice is to go to node 3 or node 4. Also, since
+    the edges are arrows, you can't backtrack. You can't go from node 2 directly to node 1.
+</p>
+<p>
+    You will notice, however, that you can get from node 2 to node 1 indirectly by first going to
+    node 3, then node 0, and finally node 1. In any graph, if you can get from a node back to itself
+    you have a cycle in your graph.
+</p>
+<img src="https://media.geeksforgeeks.org/wp-content/uploads/cycle-BFS.png"/>
+
+
+<p>
+    Sometimes the choices we make in our lives can't be undone. Sometimes they can. Take a look at the graph below. It
+    represents choices made when getting dressed. Notice there are no arrow heads on the edges.
+    This is called an undirected graph. The graph is saying you can start with any node, let's
+    say selecting a black t-shirt, then choose the red hat to go with it, change your mind, go back
+    to the black t-shirt, and then select the white hat or no hat at all.
+
+</p>
+<img src="https://miro.medium.com/max/700/1*9NaTWnSvRXPv4bewvIhMNQ.png"/>
+
+<p>
+    Here is an example where you use graphs everyday. Let's say you are on BYU-Idaho's campus. A
+    class you are in gets out. You now need to get to your next class. It's in a building
+    across campus. How do you get from here to there? You have nodes where sidewalks intersect.
+    The sidewalks themsevles are edges. You make a choice each time you reach a node (crosswalk
+    intersection).
+</p>
+<p>Game design, both for computers and not, is another area where graphs are used as is web site design and software design. 
+  Please don't get the idea that you only use graphs to do 'computery' things. You'd be supprised where you can 
+  <a href="https://youtu.be/TwHy2DuWB3k">apply graphs to solve problems</a>.
+</p>
 <footer>
 <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
 </footer>
