@@ -4,7 +4,7 @@
 <html>
 
 <head>
-  <link rel="shortcut icon" href="https://byui-cse.github.io/Language-Courses/site/images/fav.ico" type="image/x-i        con">
+	<link rel="shortcut icon" href="https://byui-cse.github.io/Language-Courses/site/images/fav.ico" type="image/x-i        con">
     <script type="text/javascript">
                  var codeType = "Clojure"
     </script>
@@ -20,62 +20,73 @@
 <div class="hero-image">
   <div class="hero-text">
     <h1>CSE 180: Week 06</h1>
-    <p>Reducing Waste</p>
+    <p>Graphs and Making Choices</p>
   </div>
 </div>
-
-<blockquote class="style1">
-    <span>Use the resources of the earth sparingly and reverently. Adopt lifestyles and personal habits that respect the Creation. As you can, fix up and keep clean the places where you live, work, recreate, and worship.</span>
-    <p class="style1">- The Church of Jesus Christ of Latter Day Saints</p>
-</blockquote>
-<p>Please read all of the linked articles.</p>
-
 <p>
-This week, the life lesson is to learn about how to eliminate waste in our lives. This includes compressing the redundancy (uselessness) out of our lives and focusing on replacing good things with better and best things.
+  Please read all of the linked articles.
 </p>
-<h2>Waste</h2>
+<h2>Waypoints and Choices</h2>
 <p>
-  Waste is a big part of most of our lives. Many of us live in places where there is such an abundance that we have 
-  become used to waste and no longer see it. Consider how much food is wasted by grocery stores in the United 
-  States each day when they throw out food that has become wilted, old, or rotten and replace it with new food, 
-  that they know will not be sold before it too goes bad, and do this for the sake of marketing not due to poor 
-  planning.
+Each of our lives consists of a series of waypoints and choices. The Lord&rsquo;s plan of happiness is such a set of 
+waypoints and choices. The first waypoint is when we hear and understand the Gospel of Jesus Christ. The 
+choice is whether we will embrace it or reject it. If we choose to embrace it, there is another waypoint. 
+We have to choose to repent or not. Then follows baptism or not. Our choices at these waypoints are the 
+way we choose salvation and eternal life, or not. They are part of a huge web of waypoints that 
+make up the lives we lead. Choosing The Lord and His Gospel impacts all choices made thereafter and 
+therefore impacts everyone we meet thereafter. 
 </p>
 <p>
-  Grocery stores are not the only food wasters. In an article from the BYU paper, they quote the US Department of 
-  Agriculture as stating that <a href="https://universe.byu.edu/2017/11/27/some-americans-go-hungry-while-others-waste-food/">30-40%</a> of all food in 
-  the US ends up as waste. This happens all the way from production to individuals throwing out food from their 
-  refrigerators and plates. 
+President Nelson taught us in 
+<a href="https://www.churchofjesuschrist.org/study/general-conference/1990/10/choices?lang=eng">a conference talk</a> 
+about making choices, even when the thought of doing so causes uncertainty and anxiety. He was counseling a 
+sister who was scared to make a choice because she knew the
 </p>
-<p> 
-  The church has produced a 
-  <a href="https://www.churchofjesuschrist.org/study/manual/gospel-topics/environmental-stewardship-and-conservation?lang=eng">Gospel Topics article on 
-  environmental stewardship and conservation</a>. In it each of us is taught that we have a responsibility to keep 
-  the earth clean. That includes being aware of how the trash, food and non-food waste, we generate is dealt with.
-</p>
-
-
-<p>
-  But wasting resources is not the only type of waste we see around us or even that we participate in. As human 
-  beings we waste our time doing good things when we could be doing better or best things. In 2007 Elder Oaks 
-  taught us in his conference talk called <a href="https://www.churchofjesuschrist.org/study/general-conference/2007/10/good-better-best?lang=eng">Good, Better, Best</a> to carefully think about the 
-  things we choose to do. There are good things we do each day that could be replaced by things that are 
-  better or best.
-</p>
-  <p>Earlier, Hugh Nibley put it this way.
 <blockquote>
-  <p>Sin is waste. It is doing one thing when you should be doing other and
-better things for which you have the capacity. Hence, there are no innocent
-idle thoughts. That is why even the righteous must repent, constantly and
-progressively, since all fall short of their capacity and calling.
-</p>
-  <p>
-    Hugh Nibley - " <a href="https://emp.byui.edu/ANDERSONKC/Zeal%20Without%20Knowledge.pdf">Zeal Without Knowledge</a>", 1978
-  </p></blockquote>
-  <p>
-    
+  consequences of her choice would affect her husband and her family as well. She said, &ldquo;Decisions are really hard for me. 
+  I even have trouble choosing what to wear each morning.&rdquo; &ldquo;You are not so different,&rdquo; I replied. &ldquo;Each of us must make choices.&rdquo;
+  <p>Russell M. Nelson - Choices, 1999 </p>
 </blockquote>
+This week you are learning about how to find a good path to
+what you want to be or where you want to go with your life. Speaking
+algorithmically, we&rsquo;re talking about graphs and paths.
+</p>
+<h2>Graphs</h2>
+<p>
+    Below is an image of a graph. The image is made up of circles, called nodes, and arrows,
+    called edges. At each node (circle) is a decision point. Take a look at the node labeled 2.
+    At node 2, a decision has to be made. The choice is to go to node 3 or node 4. Also, since
+    the edges are arrows, you can&rsquo;t backtrack. You can&rsquo;t go from node 2 directly to node 1.
+</p>
+<p>
+    You will notice, however, that you can get from node 2 to node 1 indirectly by first going to
+    node 3, then node 0, and finally node 1. In any graph, if you can get from a node back to itself
+    you have a cycle in your graph.
+</p>
+<img src="https://media.geeksforgeeks.org/wp-content/uploads/cycle-BFS.png"/>
 
+
+<p>
+    Sometimes the choices we make in our lives can&rsquo;t be undone. Sometimes they can. Take a look at the graph below. It
+    represents choices made when getting dressed. Notice there are no arrowheads on the edges.
+    This is called an undirected graph. The graph is saying you can start with any node, let&rsquo;s
+    say selecting a black t-shirt, then choose the red hat to go with it, change your mind, go back
+    to the black t-shirt, and then select the white hat or no hat at all.
+
+</p>
+<img src="https://miro.medium.com/max/700/1*9NaTWnSvRXPv4bewvIhMNQ.png"/>
+
+<p>
+    Here is an example where you use graphs everyday. Let&rsquo;s say you are on BYU-Idaho&rsquo;s campus. A
+    class you are in gets out. You now need to get to your next class. It&rsquo;s in a building
+    across campus. How do you get from here to there? You have nodes where sidewalks intersect.
+    The sidewalks themselves are edges. You make a choice each time you reach a node (crosswalk
+    intersection).
+</p>
+<p>Game design, both for computers and not, is another area where graphs are used, as is web site design and software design. 
+  Please don&rsquo;t get the idea that you only use graphs to do &lsquo;computery&rsquo; things. You&rsquo;d be supprised where you can 
+  <a href="https://youtu.be/TwHy2DuWB3k">apply graphs to solve problems</a>.
+</p>
 <footer>
 <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
 </footer>

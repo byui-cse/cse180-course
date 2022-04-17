@@ -20,73 +20,58 @@
 <div class="hero-image">
   <div class="hero-text">
     <h1>CSE 180: Week 04</h1>
-    <p>Graphs and Making Choices</p>
+    <p>Algorithms for Ordered Searching</p>
   </div>
 </div>
 <p>
-  Please read all of the linked articles.
+    The life lesson this week is on the importance of and need for preparation, or
+    what <a href="https://www.franklincovey.com/the-7-habits.html">Dr. Stephen R. Covey</a>,
+    among others, called saw-sharpening. The analogy is this. If you sharpen your saw
+    before you start using it to cut wood, it is faster and easier to complete your task.
 </p>
-<h2>Waypoints and Choices</h2>
-<p>
-Each of our lives consists of a series of waypoints and choices. The Lord&rsquo;s plan of happiness is such a set of 
-waypoints and choices. The first waypoint is when we hear and understand the Gospel of Jesus Christ. The 
-choice is whether we will embrace it or reject it. If we choose to embrace it, there is another waypoint. 
-We have to choose to repent or not. Then follows baptism or not. Our choices at these waypoints are the 
-way we choose salvation and eternal life, or not. They are part of a huge web of waypoints that 
-make up the lives we lead. Choosing The Lord and His Gospel impacts all choices made thereafter and 
-therefore impacts everyone we meet thereafter. 
-</p>
-<p>
-President Nelson taught us in 
-<a href="https://www.churchofjesuschrist.org/study/general-conference/1990/10/choices?lang=eng">a conference talk</a> 
-about making choices, even when the thought of doing so causes uncertainty and anxiety. He was counseling a 
-sister who was scared to make a choice because she knew the
-</p>
-<blockquote>
-  consequences of her choice would affect her husband and her family as well. She said, &ldquo;Decisions are really hard for me. 
-  I even have trouble choosing what to wear each morning.&rdquo; &ldquo;You are not so different,&rdquo; I replied. &ldquo;Each of us must make choices.&rdquo;
-  <p>Russell M. Nelson - Choices, 1999 </p>
-</blockquote>
-This week you are learning about how to find a good path to
-what you want to be or where you want to go with your life. Speaking
-algorithmically, we&rsquo;re talking about graphs and paths.
-</p>
-<h2>Graphs</h2>
-<p>
-    Below is an image of a graph. The image is made up of circles, called nodes, and arrows,
-    called edges. At each node (circle) is a decision point. Take a look at the node labeled 2.
-    At node 2, a decision has to be made. The choice is to go to node 3 or node 4. Also, since
-    the edges are arrows, you can&rsquo;t backtrack. You can&rsquo;t go from node 2 directly to node 1.
-</p>
-<p>
-    You will notice, however, that you can get from node 2 to node 1 indirectly by first going to
-    node 3, then node 0, and finally node 1. In any graph, if you can get from a node back to itself
-    you have a cycle in your graph.
-</p>
-<img src="https://media.geeksforgeeks.org/wp-content/uploads/cycle-BFS.png"/>
-
 
 <p>
-    Sometimes the choices we make in our lives can&rsquo;t be undone. Sometimes they can. Take a look at the graph below. It
-    represents choices made when getting dressed. Notice there are no arrowheads on the edges.
-    This is called an undirected graph. The graph is saying you can start with any node, let&rsquo;s
-    say selecting a black t-shirt, then choose the red hat to go with it, change your mind, go back
-    to the black t-shirt, and then select the white hat or no hat at all.
-
+Read Doctrine and Covenants 88:119, and as commanded in the scriptures,
+liken it to yourself. One way of doing this is to substitute &ldquo;life&rdquo; for &ldquo;house&rdquo;
+since our lives need to be holy, not worldly, just as the temple is holy.
 </p>
-<img src="https://miro.medium.com/max/700/1*9NaTWnSvRXPv4bewvIhMNQ.png"/>
 
 <p>
-    Here is an example where you use graphs everyday. Let&rsquo;s say you are on BYU-Idaho&rsquo;s campus. A
-    class you are in gets out. You now need to get to your next class. It&rsquo;s in a building
-    across campus. How do you get from here to there? You have nodes where sidewalks intersect.
-    The sidewalks themselves are edges. You make a choice each time you reach a node (crosswalk
-    intersection).
+  Imagine that your clothes are piled up in the middle of your bedroom and you need to get dressed to come to class. Also imagine that
+  you just threw your clothes in the pile with absolutely no thought. There is one more thing regarding this scenario. Your roommate, or
+  spouse, is not happy with the situation and has stirred up your pile in a pique.
 </p>
-<p>Game design, both for computers and not, is another area where graphs are used, as is web site design and software design. 
-  Please don&rsquo;t get the idea that you only use graphs to do &lsquo;computery&rsquo; things. You&rsquo;d be supprised where you can 
-  <a href="https://youtu.be/TwHy2DuWB3k">apply graphs to solve problems</a>.
+<p>
+  Now I&rsquo;m sure none of you have ever piled your clothes up like this.&#128516; But if you were in this situation, how efficiently and
+  quickly could you get dressed?
 </p>
+<p>
+  Or maybe, like me, you grew up in a home where there was a junk drawer. A drawer where you put everything that didn&rsquo;t seem to fit into
+  the groups of things in the other drawers. How easy was it to find something in there?
+</p>
+<p>
+  If you are looking for something specific in a group of unordered things, your search is going to be frustrating and slow. There is a
+  better way.
+</p>
+<h2>
+  Ordered Search
+</h2>
+<p>
+  Last week you learned at least one algorithm for sorting things. It is much more efficient to search through an ordered set of things when
+  you are looking for something specific. So, before searching you should sort the things. Then you can find what you need easier.
+</p>
+<p>
+  Binary search is a common algorithm used to search ordered things. In binary search you start by looking in the middle. I know. That&rsquo;s weird.
+  But stop and think about it for a minute. If you start in the middle, then you know if the thing you are looking for is to your right or
+  your left. That means you don&rsquo;t have to check HALF of the things to find what you are looking for. If you now ignore the half of the things
+  that can&rsquo;t be what you want, you can repeat this process for the half where the thing you want might be until you find it.
+  That&rsquo;s going to be a lot faster than starting on the left or right and checking each thing until you find what you want.&#127881;&#127881;
+</p>
+<p>
+  Binary search can be hard to imagine so you might want to watch <a href="https://youtu.be/t0WJeVfV-sM">a visualization of binary search</a>.
+</p>
+
+
 <footer>
 <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
 </footer>
