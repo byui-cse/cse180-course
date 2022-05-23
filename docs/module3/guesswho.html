@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Guess Who</title>
+        <style type="text/css">
+            .container {
+                display: flex;
+                                /* grid-template-columns: 60% 40%;  */
+                padding-left: 5%;
+                padding-right: 5%;
+            }
+            .flex-child {
+                flex: 1;
+            }
+            .flex-child:first-child {
+                margin-right: 20px;
+            }
+            @media screen and (max-width: 800px) {
+                .container {
+                    flex-flow: wrap;
+                }
+            }
+            .table {
+                display: inline-grid;
+                grid-template-columns: 102px 102px 102px 102px 102px 102px; 
+                max-width: 612px;
+                background: black;
+                padding: 1px;
+            }
+            .table > div {
+                margin: 1px;
+                background: lightgoldenrodyellow;
+                padding: 0px;
+            }
+            .table {
+                display: grid;
+                grid-template-columns: 102px 102px 102px 102px 102px 102px; 
+                max-width: 612px;
+                background: black;
+                padding: 1px;
+            }
+            .table > div {
+                margin: 1px;
+                background: lightgoldenrodyellow;
+                padding: 0px;
+            }
+            img.card {
+                padding: 0px;
+                border-spacing: 0px;
+                margin: 0px;
+                display: block;
+                cursor: pointer;
+            }
+            img.me {
+                border: solid black 2px;
+            }
+        </style>
+        <script type="text/javascript">
+            var places = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23];
+            var flipped = [false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false];
+            initialized = false;
+
+            function shuffleCards() {
+                initialized = true;
+                for (var i = places.length - 1; i > 0; i--) {
+                    var j = Math.floor(Math.random() * (i + 1));
+                    var temp = places[i];
+                    places[i] = places[j];
+                    places[j] = temp;
+                }
+                flipped = [false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false];
+                displayAll();
+                document.getElementById("img_me").src = "images/guesswho_" + Math.floor(Math.random() * 24) + ".jpg";
+            }
+
+            function resetDisplay() {
+                if (!initialized) {
+                    return;
+                }
+                if (confirm("This will reset all flipped cards...\nAre you sure?") == true) {
+                    flipped = [false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false];
+                }
+                displayAll();
+            }
+
+            function displayAll() {
+                for (var i = 0; i < places.length; ++i) {
+                    if (flipped[i]) {
+                        document.getElementById("img" + i).src = "images/guesswho_x.jpg";
+                    }
+                    else {
+                        document.getElementById("img" + i).src = "images/guesswho_" + places[i] + ".jpg";
+                    }
+                }
+            }
+
+            function hide(target) {
+                if (!initialized) {
+                    return;
+                }
+                index = parseInt(target.id.substring(3))
+                flipped[index] = !flipped[index]
+                if (flipped[index]) {
+                    target.src = "images/guesswho_x.jpg";
+                }
+                else {
+                    target.src = "images/guesswho_" + places[index] + ".jpg";
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="flex-child">
+                <p><strong>Opponent</strong></p>
+                <div class="table">
+                    <div><img src="images/guesswho_blank.jpg" id="img0" class="card" onclick="hide(this);" /></div>
+                    <div><img src="images/guesswho_blank.jpg" id="img1" class="card" onclick="hide(this);" /></div>
+                    <div><img src="images/guesswho_blank.jpg" id="img2" class="card" onclick="hide(this);" /></div>
+                    <div><img src="images/guesswho_blank.jpg" id="img3" class="card" onclick="hide(this);" /></div>
+                    <div><img src="images/guesswho_blank.jpg" id="img4" class="card" onclick="hide(this);" /></div>
+                    <div><img src="images/guesswho_blank.jpg" id="img5" class="card" onclick="hide(this);" /></div>
+                    <div><img src="images/guesswho_blank.jpg" id="img6" class="card" onclick="hide(this);" /></div>
+                    <div><img src="images/guesswho_blank.jpg" id="img7" class="card" onclick="hide(this);" /></div>
+                    <div><img src="images/guesswho_blank.jpg" id="img8" class="card" onclick="hide(this);" /></div>
+                    <div><img src="images/guesswho_blank.jpg" id="img9" class="card" onclick="hide(this);" /></div>
+                    <div><img src="images/guesswho_blank.jpg" id="img10" class="card" onclick="hide(this);" /></div>
+                    <div><img src="images/guesswho_blank.jpg" id="img11" class="card" onclick="hide(this);" /></div>
+                    <div><img src="images/guesswho_blank.jpg" id="img12" class="card" onclick="hide(this);" /></div>
+                    <div><img src="images/guesswho_blank.jpg" id="img13" class="card" onclick="hide(this);" /></div>
+                    <div><img src="images/guesswho_blank.jpg" id="img14" class="card" onclick="hide(this);" /></div>
+                    <div><img src="images/guesswho_blank.jpg" id="img15" class="card" onclick="hide(this);" /></div>
+                    <div><img src="images/guesswho_blank.jpg" id="img16" class="card" onclick="hide(this);" /></div>
+                    <div><img src="images/guesswho_blank.jpg" id="img17" class="card" onclick="hide(this);" /></div>
+                    <div><img src="images/guesswho_blank.jpg" id="img18" class="card" onclick="hide(this);" /></div>
+                    <div><img src="images/guesswho_blank.jpg" id="img19" class="card" onclick="hide(this);" /></div>
+                    <div><img src="images/guesswho_blank.jpg" id="img20" class="card" onclick="hide(this);" /></div>
+                    <div><img src="images/guesswho_blank.jpg" id="img21" class="card" onclick="hide(this);" /></div>
+                    <div><img src="images/guesswho_blank.jpg" id="img22" class="card" onclick="hide(this);" /></div>
+                    <div><img src="images/guesswho_blank.jpg" id="img23" class="card" onclick="hide(this);" /></div>
+                </div>
+            </div>
+            <div class="flex-child">
+                <p><strong>Me</strong></p>
+                <img src="images/guesswho_blank.jpg" id="img_me" class="card me" />
+                <br />
+                <button onclick="shuffleCards();">Begin New Game</button>
+                <br />
+                <br />
+                <button id="hideButton" onclick="resetDisplay();">Reset Flipped Cards</button>
+            </div>
+        </div>
+    </body>
+</html>
