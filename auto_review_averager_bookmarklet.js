@@ -44,6 +44,11 @@ while (graded < totalToGrade && times < totalToGrade)
             break;
         }
     }
+    else if (document.getElementById('multiple_submissions').textContent.search("no submission time") > 0 && document.getElementById('grading-box-extended').value.length == 0) {
+        document.getElementById('grading-box-extended').value = 0;
+        document.getElementById('grading-box-extended').dispatchEvent(new Event('change'));
+    }
+
     document.getElementById('next-student-button').dispatchEvent(new Event('click'));
     xOfX = document.getElementById('x_of_x_graded').innerText.split('/');
     graded = parseInt(xOfX[0]);
